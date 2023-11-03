@@ -4,7 +4,7 @@
   "description": "A simple api for tracking projects informations on www.kisskissbankbank.com",
   "main": "app.js",
   "scripts": {
-    "start": "NODE_env= production node app.js",
+    "start": "NODE_ENV=production node app.js",
     "dev": "NODE_ENV=development nodemon app.js"
   },
   "author": "LudovicLeBris",
@@ -16,5 +16,8 @@
   },
   "devDependencies": {
     "nodemon": "^3.0.1"
+  },
+  "engines": {
+    "node": ">=18.18.2 <19.0.0"
   }
 }
