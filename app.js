@@ -13,7 +13,7 @@ const baseUrl = 'https://www.kisskissbankbank.com/fr/projects/';
 
 app.use(express.static('public'));
 
-app.get('/:project', async (req, res) => {
+app.get('/:project/amount', async (req, res) => {
     const url = baseUrl + req.params.project;
     const scrap = await fetch(url);
     const text = await scrap.text();
